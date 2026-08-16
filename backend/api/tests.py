@@ -1,12 +1,12 @@
+"""Тесты API проекта Taski."""
 from http import HTTPStatus
 
-from django.test import Client, TestCase
-
 from api import models
+from django.test import Client, TestCase
 
 
 class TaskiAPITestCase(TestCase):
-    """Тесты API проекта Taski."""
+    """Тесты доступности и создания задач."""
 
     def setUp(self):
         """Подготовка клиента для неавторизованных запросов."""
